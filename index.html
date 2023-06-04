@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect   " href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="/app/app.js" defer></script>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Portfolio 👩🏻‍💻</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-link" href="#homeContainer">
+                <img src="./style/images/logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Edgar Vega
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutMeContainer">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#MyProjects">My projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#fullFormContainer">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center" style="max-width: 90%;" id="homeContainer">
+        <div class="container mx-2 p-0" style="max-width: 40%;">
+            <p class="fs-4">Hi there!, I'm Edgar Eduardo Vega Ruiz, a programer interesed to colaborate in your company,
+                project or wathever you need :)</br><a class="nav-link active" aria-current="page" href="#"
+                    id="contactLabel">Contact Me!</a></p>
+        </div>
+        <img src="./style/images/Code typing-bro.svg" alt="svg of hands coding" width="400" height="400">
+    </div>
+
+    <section id="aboutMeContainer">
+        <div class="container d-flex flex-column align-items-center justify-content-center p-3" style="max-width: 90%;" id="aboutMe">
+            <span class="fs-3 p-3">About Me</span>
+            <div class="container d-flex justify-content-center align-items-center mx-4 p-0" id="imgTextContainer">
+            <img src="./style/images/edgarPhoto.jpeg" alt="svg of hands coding" width="500" height="500">
+                <p>I am Edgar Eduardo Vega Ruiz, a software engineering student at the Universidad Autonoma de Sinaloa.
+                    I am passionate about web development and have experience in frontend using HTML, CSS, JavaScript,
+                    and Bootstrap, as well as backend development using Java and SpringBoot. I also have skills in
+                    Python and Visual Basic, and knowledge of relational databases like MySql.</br>
+                    In addition to my technical skills, I excel in soft skills such as communication, teamwork,
+                    feedback, and emotional intelligence. I am an ambitious individual who constantly seeks growth, and
+                    I believe in the power of individual actions to make a difference.</br>
+                    I am open to collaborations and eager to work on joint projects. My approach is centered around
+                    listening, empathizing, and working hard to achieve set goals.</ br>
+                    It's a pleasure to meet you, and I hope to have the opportunity to collaborate with you in the
+                    future!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="MyProjects">
+        <div class="container d-flex align-items-center justify-content-center flex-column"
+            id="projectsSectionContainer">
+            <p class="fs-2">projects</p>
+    
+            <div class="container d-flex flex-wrap" id="projectContainer">
+                <div class="card JAVA" style="width: 18rem;">
+                    <img src="./style/images/projectSS/apiSS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Api Voll Med</h5>
+                        <p class="card-text">Backend api for web using Java and SpringBoot as framework</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/java_icon.svg" alt="java image" width="15%" title="java">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/VollMed"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                    </div>
+                </div>
+
+                <div class="card JAVA" style="width: 18rem;">
+                    <img src="./style/images/projectSS/deleafverySS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deleafvery</h5>
+                        <p class="card-text">Backend api for web using Java and SpringBoot as framework</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/java_icon.svg" alt="java image" width="15%" title="java">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/deleafveryApi"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                    </div>
+                </div>
+
+                <div class="card WEB" style="width: 18rem;">
+                    <img src="./style/images/projectSS/watherSS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">weather cite</h5>
+                        <p class="card-text">weather cite using an api with javascript fetch, pure HTML, CSS, JS</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
+                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
+                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/werather_cite"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                        <a href="https://animated-narwhal-dc6704.netlify.app/"
+                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
+                    </div>
+                </div>
+
+                <div class="card WEB" style="width: 18rem;">
+                    <img src="./style/images/projectSS/toDoWebSS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Task list web</h5>
+                        <p class="card-text">A CRUD web using HTML, CSS, JS</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
+                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
+                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/To-Do-List-web"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                        <a href="https://fabulous-marzipan-9b8910.netlify.app/"
+                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
+                    </div>
+                </div>
+
+                <div class="card WEB" style="width: 18rem;">
+                    <img src="./style/images/projectSS/barberSS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alura Barber Page</h5>
+                        <p class="card-text">A page for 'Alura Barber' where you can get to know them, their products,
+                            and their location.</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
+                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
+                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/To-Do-List-web"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                        <a href="https://fabulous-marzipan-9b8910.netlify.app/"
+                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
+                    </div>
+                </div>
+
+                <div class="card WEB" style="width: 18rem;">
+                    <img src="./style/images/projectSS/calcSS.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">web calculator</h5>
+                        <p class="card-text">A web calculator with the basic functions.</p>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <p class="java fs-5">languages:</p>
+                        <div class="d-flex imgContainer">
+                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
+                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
+                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="https://github.com/PricedTuna/calculadora"
+                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
+                        <a href="https://cheerful-pegasus-fad1b9.netlify.app/"
+                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container d-flex flex-column align-items-center" id="fullFormContainer">
+        
+        <form action="https://formsubmit.co/edgarevegar04@gmail.com" method="POST"
+        class="d-flex flex-column flex-wrap p-4 fs-5" id="formContainer">
+        <span class="fs-3">Contact me</span>
+
+            <label for="name" class="form-label">name</label>
+            <input type="text" name="name" class="form-control" placeholder="..." required>
+
+            <label for="email" class="form-label">email</label>
+            <input type="email" name="email" class="form-control" placeholder="..." required>
+
+            <label for="content" class="form-label">content</label>
+            <textarea name="content" id="textarea" cols="30" rows="5" placeholder="..." class="form-control"></textarea>
+
+            <button type="submit" class="btn btn-light">Send</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <button id="githubBtn" class="footerBtn">
+          <img src="./style/images/icon/GH_icon.png" alt="GitHub icon" width="50px" height="50px">
+        </button>
+        <button id="linkedinBtn" class="footerBtn">
+          <img src="./style/images/icon/linkedin_icon.svg" alt="LinkedIn icon" width="50px" height="50px">
+        </button>
+      </footer>
+      
+</body>
+
+</html>
