@@ -159,6 +159,15 @@ body {
     scale: 1.05;
 }
 
+#txtHome {
+    width: 40%;
+}
+
+#meImage {
+    width: 500px;
+    height: 500px;
+}
+
 @media (max-width: 1000px) {
     #homeContainer{
         flex-direction: column;
@@ -180,9 +189,19 @@ body {
     #fullFormContainer {
         width: 80%;
     }
+
+    #txtHome {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
+
+    #meImage {
+        width: 300px;
+        height: 300px;
+    }
+
     #projectContainer .card {
         flex: 0 0 calc(100% - 30px); /* Adjust the percentage as needed */
         margin: 15px;
