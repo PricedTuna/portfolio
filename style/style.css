@@ -106,7 +106,7 @@ body {
 
 .hiddenSection {
    opacity: 0;
-   transition: all 1.5s;
+   transition: all 2s;
 }
 
 .hiddenProject {
