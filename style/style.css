@@ -1,209 +1,91 @@
-/* CAFESITO #c5543a RGB (197, 84, 58) */
-/* AZULITO  #3aabc5 RGB (58, 171, 197)*/
+* {
+   font-family: 'Roboto', sans-serif;
+}
 
+a {
+   color: white;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgba(58, 171, 197, 0.15);
-    color: #1c5360;
+   background-color: rgba(198,235,237,0.3);
+   padding-top: 70px;
 }
 
-#homeContainer {
-    box-shadow: 1px -2px 22px -7px rgba(107, 167, 187, 0.75);
-    background-color: rgb(255, 255, 255);
-    margin-top: 22vh;
-    margin-bottom: 200px;
+.customFontNav {
+   font-family: 'Dancing Script', cursive;
 }
 
-#aboutMe {
-    box-shadow: 1px -2px 26px -7px rgba(107, 167, 187, 0.75);
-
-    background-color: rgb(255, 255, 255);
-
-    margin-bottom: 5px;
+.bgNavbar {
+   background-color: #A0DDE0;
 }
 
-#aboutMe p {
-    font-size: 22px;
-    margin-top: 10px;
+#about {
+   min-height: calc(100vh - 70px);
+   background-color: #56C0C4;
 }
 
-#aboutMe img {
-    border: 2px solid #1aaec1;
-    margin: 10px;
+#edgarAboutPhoto {
+   height: 70%;
 }
 
-#contactLabel {
-    color: skyblue;
+.aboutMeText {
+   color: #276b6d;
 }
 
-#contactLabel:hover {
-    color: #3aabc5;
+.btnContact {
+   background-color: rgb(198,235,237);
+   color: black;
 }
 
-#nav {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+.btnContact:hover {
+   background-color: rgb(220, 235, 236);
 }
 
-#formContainer {
-    margin-top: 5vh;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: 4px solid #1aaec1;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
-    border-radius: 5%;
-    width: 100%;
+.list-group-item {
+   border: 0;
+   background-color: transparent;
 }
 
-#fullFormContainer {
-    margin-top: 25vh;
-    margin-bottom: 10vh;
-    width: 60%;
+.list-group-item:hover {
+   background-color: #3b8689;
 }
 
-#textarea {
-    margin-bottom: 10px;
+.iconSkill {
+   height: 100px;
 }
 
-.form-control {
-    border: 2px solid rgba(0, 0, 0, 0.3);
+.bgDisabled {
+   background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-.btn-light {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    background-color: whitesmoke;
-    color: black;
+.bgProject {
+   background-color: #A0DDE0;
 }
 
-.btn-light:hover {
-    background-color: #1aaec1;
+.bgJava {
+   background-color: #e0a3a0;
 }
 
-#projectsSectionContainer {
-    margin-top: 35vh;
-    box-shadow: 1px -2px 22px -7px rgba(0, 0, 0, 0.75);
-    background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: 1px -2px 22px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px -2px 22px -7px rgba(0, 0, 0, 0.75);
-
-    padding: 20px 0px;
+.bgCSS {
+   background-color: #86b8de;
 }
 
-#projectContainer div {
-    margin: 15px;
-    min-width: 220px;
+.bgJS {
+   background-color: #dbe0a0;
 }
 
-#projectContainer>div:hover {
-    transition-duration: 200ms;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-    scale: 1.05;
+.bgBootstrap {
+   background-color: #b1a0e0;
 }
 
-.cardBtn {
-    width: 80%;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
-    border-radius: 5px;
-    padding: 2px 2px;
-    text-decoration: none;
+.iconLanguage {
+   height: 50px;
 }
 
-.cardBtn:hover {
-    transition-duration: 150ms;
-    scale: 1.05;
+.formContainer {
+   background-color: #56C0C4;
 }
 
-.btnGitHub {
-    background-color: black;
-    color: white;
-}
-
-.bntLink {
-    background-color: whitesmoke;
-    color: black;
-}
-
-.imgContainer img {
-    margin: 2px;
-}
-
-#projectContainer .card {
-    flex: 0 0 calc(33.33% - 30px); /* Adjust the percentage as needed */
-    margin: 15px;
-}
-
-
-#footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-.footerBtn {
-    background-color: white;
-    border-radius: 10px;
-    padding: 0;
-    margin: 0;
-}
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.nav-link:hover {
-    transition-duration: 100ms;
-    scale: 1.05;
-}
-
-#txtHome {
-    width: 40%;
-}
-
-#meImage {
-    width: 500px;
-    height: 500px;
-}
-
-@media (max-width: 1000px) {
-    #homeContainer{
-        flex-direction: column;
-    }
-
-    #aboutMe{
-        flex-direction: column;
-    }
-
-    #imgTextContainer {
-        flex-direction: column;
-    }
-
-    #projectContainer .card {
-        flex: 0 0 calc(50% - 30px); /* Adjust the percentage as needed */
-        margin: 15px;
-    }
-
-    #fullFormContainer {
-        width: 80%;
-    }
-
-    #txtHome {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-
-    #meImage {
-        width: 300px;
-        height: 300px;
-    }
-
-    #projectContainer .card {
-        flex: 0 0 calc(100% - 30px); /* Adjust the percentage as needed */
-        margin: 15px;
-    }
-}
+/* .projectDescription {
+   margin-left: 20%;
+} */ 

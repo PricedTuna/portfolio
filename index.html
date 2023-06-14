@@ -1,251 +1,510 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BootsTrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap demo</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect   " href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+   <!-- Css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style/style.css">
 
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
 
-    <!-- My Css -->
-    <link rel="stylesheet" href="./style/style.css">
-
-    <script src="/app/app.js" defer></script>
-
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <title>Portfolio 👩🏻‍💻</title>
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="nav">
-        <div class="container-fluid">
-            <a class="navbar-brand nav-link" href="#homeContainer">
-                <img src="./style/images/logo.png" alt="Logo" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                Edgar Vega
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#aboutMeContainer">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#MyProjects">My projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#fullFormContainer">Contact Me</a>
-                    </li>
-                </ul>
+   <nav class="navbar navbar-expand-lg fixed-top shadow-sm border border-info bgNavbar py-3">
+      <div class="container">
+         <p class="navbar-brand customFontNav fs-3 m-0">E d g a r <span class="ms-3 customFontNav">V e g a</span></p>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About Me</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#skills">Skills</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <section class="container-fluid pt-5" id="about">
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+         <div class="col d-flex flex-column justify-content-center align-items-center text-center">
+            <img src="./assets/edgarPhoto.jpeg" class="img-fluid rounded-circle border" alt="Edgar Photo"
+               id="edgarAboutPhoto" />
+         </div>
+         <div class="col d-flex flex-column justify-content-center align-items-center p-2">
+            <div class="container">
+               <h2 class="text-white text-center fw-bold aboutMeText fs-1 my-4">About Me</h2>
+               <p class="text-white fs-4 my-3">I am a Software Engineering student passionate about programming and
+                  innovation. I have both skill and demonstrated experience with projects in HTML, CSS, JavaScript,
+                  TypeScript, Bootstrap, Java, Spring Boot, and SQL database management. I have experience working in
+                  teams and enjoy maintaining a healthy and collaborative work environment. I am highly open to learning
+                  new technologies and applying them to projects. Additionally, I am flexible and dynamic.</p>
+               <div class="d-grid gap-2 d-md-block text-center mt-4">
+                  <a href="" class="btn btnContact px-4 py-2 fs-5">Contact Me</a>
+                  <div class="list-group list-group-horizontal list-group-flush mt-2 fs-5">
+                     <a href="https://instagram.com/edgarevegar?igshid=MzNlNGNkZWQ4Mg=="
+                        class="list-group-item list-group-item-action"><i class="fa-brands fa-square-instagram"></i></a>
+                     <a href="https://twitter.com/EdgarEd85572125?t=nJGKd-T5l4T-PJnyqapw5A&s=09"
+                        class="list-group-item list-group-item-action"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://www.linkedin.com/in/edgarvegaruiz/"
+                        class="list-group-item list-group-item-action"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/PricedTuna" class="list-group-item list-group-item-action"><i
+                           class="fa-brands fa-github"></i></a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </nav>
+         </div>
+      </div>
+   </section>
 
-    <div class="container d-flex align-items-center justify-content-center" style="max-width: 90%;" id="homeContainer">
-        <div class="container mx-2 p-0" id="txtHome">
-            <p class="fs-4">Hi there!, I'm Edgar Eduardo Vega Ruiz, a programer interesed to colaborate in your company,
-                project or wathever you need :)</br><a class="nav-link active" aria-current="page" href="#"
-                    id="contactLabel">Contact Me!</a></p>
-        </div>
-        <img src="./style/images/Code typing-bro.svg" alt="svg of hands coding" width="400" height="400">
-    </div>
+   <section class="container mt-5 p-5" id="skills">
+      <h2 class="text-center fs-1">Skills</h2>
+      <div class="row gy-3 row-cols-2 row-cols-md-3 row-cols-lg-4 text-center pt-5">
+         <div class="col">
+            <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconSkill" alt="HTML icon">
+            <h3 class="fs-5 mt-2">HTML</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconSkill" alt="CSS icon">
+            <h3 class="fs-5 mt-2">CSS</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconSkill" alt="JavaScript icon">
+            <h3 class="fs-5 mt-2">JavaScript</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/ts_icon.svg" title="TypeScript" class="img-fluid iconSkill" alt="TypeScript icon">
+            <h3 class="fs-5 mt-2">TypeScript</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/bootstrap_icon.svg" title="Bootstrap" class="img-fluid iconSkill"
+               alt="Bootstrap icon">
+            <h3 class="fs-5 mt-2">Bootstrap</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/sql_icon.svg" title="SQL database" class="img-fluid iconSkill"
+               alt="SQL database icon">
+            <h3 class="fs-5 mt-2">SQL database</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/java_icon.svg" title="Java" class="img-fluid iconSkill" alt="Java icon">
+            <h3 class="fs-5 mt-2">Java</h3>
+         </div>
+         <div class="col">
+            <img src="./assets/icons/spring_icon.svg" title="Springboot" class="img-fluid iconSkill"
+               alt="Springboot icon">
+            <h3 class="fs-5 mt-2">Springboot</h3>
+         </div>
+      </div>
+      <div class="container-fluid text-center">
+         <img src="./assets/icons/react_icon.svg" title="disabled" class="img-fluid iconSkill bgDisabled" alt="...">
+         <h3 class="fs-5 mt-2">(in progres...)</h3>
+      </div>
+   </section>
 
-    <section id="aboutMeContainer">
-        <div class="container d-flex flex-column align-items-center justify-content-center p-3" style="max-width: 90%;" id="aboutMe">
-            <span class="fs-3 p-3">About Me</span>
-            <div class="container d-flex justify-content-center align-items-center mx-4 p-0" id="imgTextContainer">
-            <img src="./style/images/edgarPhoto.jpeg" alt="svg of hands coding" id="meImage">
-                <p>I am Edgar Eduardo Vega Ruiz, a software engineering student at the Universidad Autonoma de Sinaloa.
-                    I am passionate about web development and have experience in frontend using HTML, CSS, JavaScript,
-                    and Bootstrap, as well as backend development using Java and SpringBoot. I also have skills in
-                    Python and Visual Basic, and knowledge of relational databases like MySql.</br>
-                    In addition to my technical skills, I excel in soft skills such as communication, teamwork,
-                    feedback, and emotional intelligence. I am an ambitious individual who constantly seeks growth, and
-                    I believe in the power of individual actions to make a difference.</br>
-                    I am open to collaborations and eager to work on joint projects. My approach is centered around
-                    listening, empathizing, and working hard to achieve set goals.</ br>
-                    It's a pleasure to meet you, and I hope to have the opportunity to collaborate with you in the
-                    future!</p>
+   <section class="container-fluid mt-5 p-5" id="projects">
+      <div class="projectsHeader">
+         <h2 class="text-center mb-5 fs-1">Projects</h2>
+         <form class="container mb-5 text-center">
+            <label class="form-label fs-4" for="filterSelect">filter projects by...</label>
+            <select class="form-select p-3" id="filterSelect" aria-label="filter with select">
+               <option selected value="ALL">All</option>
+               <option value="HTML">HTML</option>
+               <option value="CSS">CSS</option>
+               <option value="SQL">SQL</option>
+               <option value="JAVASCRIPT">JavaScript</option>
+               <option value="TYPESCRIPT">Typescript</option>
+               <option value="BOOTSTRAP">Bootstrap</option>
+               <option value="JAVA">Java</option>
+               <option value="SPRINGBOOT">Springboot</option>
+            </select>
+         </form>
+      </div>
+      <div id="projectsContainer">
+
+         <article class="row mb-5">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgBootstrap">
+               <img src="./assets/projectSS/movieLandSS.png" class="img-fluid rounded" alt="api project ss">
             </div>
-        </div>
-    </section>
-
-    <section id="MyProjects">
-        <div class="container d-flex align-items-center justify-content-center flex-column"
-            id="projectsSectionContainer">
-            <p class="fs-2">projects</p>
-    
-            <div class="container d-flex flex-wrap" id="projectContainer">
-                <div class="card JAVA" style="width: 18rem;">
-                    <img src="./style/images/projectSS/apiSS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Api Voll Med</h5>
-                        <p class="card-text">Backend api for web using Java and SpringBoot as framework</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/java_icon.svg" alt="java image" width="15%" title="java">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/VollMed"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                    </div>
-                </div>
-
-                <div class="card JAVA" style="width: 18rem;">
-                    <img src="./style/images/projectSS/deleafverySS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Deleafvery</h5>
-                        <p class="card-text">Backend api for web using Java and SpringBoot as framework</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/java_icon.svg" alt="java image" width="15%" title="java">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/deleafveryApi"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                    </div>
-                </div>
-
-                <div class="card WEB" style="width: 18rem;">
-                    <img src="./style/images/projectSS/watherSS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">weather cite</h5>
-                        <p class="card-text">weather cite using an api with javascript fetch, pure HTML, CSS, JS</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
-                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
-                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/werather_cite"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                        <a href="https://animated-narwhal-dc6704.netlify.app/"
-                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
-                    </div>
-                </div>
-
-                <div class="card WEB" style="width: 18rem;">
-                    <img src="./style/images/projectSS/toDoWebSS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Task list web</h5>
-                        <p class="card-text">A CRUD web using HTML, CSS, JS</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
-                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
-                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/To-Do-List-web"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                        <a href="https://fabulous-marzipan-9b8910.netlify.app/"
-                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
-                    </div>
-                </div>
-
-                <div class="card WEB" style="width: 18rem;">
-                    <img src="./style/images/projectSS/barberSS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Alura Barber Page</h5>
-                        <p class="card-text">A page for 'Alura Barber' where you can get to know them, their products,
-                            and their location.</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
-                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
-                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/To-Do-List-web"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                        <a href="https://fabulous-marzipan-9b8910.netlify.app/"
-                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
-                    </div>
-                </div>
-
-                <div class="card WEB" style="width: 18rem;">
-                    <img src="./style/images/projectSS/calcSS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">web calculator</h5>
-                        <p class="card-text">A web calculator with the basic functions.</p>
-                    </div>
-                    <div class="container d-flex flex-column">
-                        <p class="java fs-5">languages:</p>
-                        <div class="d-flex imgContainer">
-                            <img src="./style/images/icon/html_icon.svg" alt="java image" width="15%" title="HTML">
-                            <img src="./style/images/icon/css_icon.svg" alt="java image" width="15%" title="CSS">
-                            <img src="./style/images/icon/js_icon.svg" alt="java image" width="15%" title="JavaScript">
-                        </div>
-                    </div>
-                    <div class="card-body d-flex justify-content-center">
-                        <a href="https://github.com/PricedTuna/calculadora"
-                            class="card-link d-flex justify-content-center cardBtn btnGitHub">github</a>
-                        <a href="https://cheerful-pegasus-fad1b9.netlify.app/"
-                            class="card-link d-flex justify-content-center cardBtn bntLink">link</a>
-                    </div>
-                </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+               <div class="projectDescription">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Movie Land</h3>
+                     <p class="fs-5">this is a page where you can do all the CRUD functions, developed using HTML, CSS,
+                        JavaScript, Typescript y Bootstrap,
+                        the CRUD is implemented with the Local Storage.
+                     </p>
+                  </div>
+                  <div class="row languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconLanguage"
+                           alt="JavaScript icon">
+                        <p class="fs-6 mt-2">javaScript</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/bootstrap_icon.svg" title="Bootstrap" class="img-fluid iconLanguage"
+                           alt="Bootstrap icon">
+                        <p class="fs-6 mt-2">Bootstrap</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/ts_icon.svg" title="Typescript" class="img-fluid iconLanguage"
+                           alt="Typescript icon">
+                        <p class="fs-6 mt-2">Typescript</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/MovieLand" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://fluffy-cactus-f13494.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
+         </article>
 
-    <div class="container d-flex flex-column align-items-center" id="fullFormContainer">
-        
-        <form action="https://formsubmit.co/edgarevegar04@gmail.com" method="POST"
-        class="d-flex flex-column flex-wrap p-4 fs-5" id="formContainer">
-        <span class="fs-3">Contact me</span>
+         <article class="row mt-5 text-end">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgBootstrap order-1 order-md-2">
+               <img src="./assets/projectSS/frontendMentorSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
+               <div class="projectDescription-right">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Learning Bootstrap</h3>
+                     <p class="fs-5">This page was for understand how the bootstrap class works, is a challenge from
+                        Frontend Mentor</p>
+                  </div>
+                  <div class="row flex-row-reverse languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconLanguage"
+                           alt="JavaScript icon">
+                        <p class="fs-6 mt-2">javaScript</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/bootstrap_icon.svg" title="Bootstrap" class="img-fluid iconLanguage"
+                           alt="Bootstrap icon">
+                        <p class="fs-6 mt-2">Bootstrap</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/NewsLetter" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://taupe-raindrop-39c264.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
+            </div>
+         </article>
 
-            <label for="name" class="form-label">name</label>
-            <input type="text" name="name" class="form-control" placeholder="..." required>
+         <article class="row mb-5">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgJava">
+               <img src="./assets/projectSS/apiSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+               <div class="projectDescription">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Voll Med Api project</h3>
+                     <p class="fs-5">This proyect is a API backend with Java and Springboot with the CRUD and security
+                        access with JWT.</p>
+                  </div>
+                  <div class="row languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/java_icon.svg" title="Java" class="img-fluid iconLanguage"
+                           alt="Java icon">
+                        <p class="fs-6 mt-2">Java</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/spring_icon.svg" title="Springboot" class="img-fluid iconLanguage"
+                           alt="Spring icon">
+                        <p class="fs-6 mt-2">Springboot</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/sql_icon.svg" title="SQL" class="img-fluid iconLanguage"
+                           alt="SQL icon">
+                        <p class="fs-6 mt-2">SQL database</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/VollMed" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                  </div>
+               </div>
+            </div>
+         </article>
 
-            <label for="email" class="form-label">email</label>
-            <input type="email" name="email" class="form-control" placeholder="..." required>
+         <article class="row mt-5 text-end">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgJava order-1 order-md-2">
+               <img src="./assets/projectSS/deleafverySS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
+               <div class="projectDescription-right">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Voll Med Api project</h3>
+                     <p class="fs-5">Backend api for web using Java and SpringBoot as framework</p>
+                  </div>
+                  <div class="row flex-row-reverse languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/java_icon.svg" title="Java" class="img-fluid iconLanguage"
+                           alt="Java icon">
+                        <p class="fs-6 mt-2">Java</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/spring_icon.svg" title="Springboot" class="img-fluid iconLanguage"
+                           alt="Spring icon">
+                        <p class="fs-6 mt-2">Springboot</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/sql_icon.svg" title="SQL" class="img-fluid iconLanguage"
+                           alt="SQL icon">
+                        <p class="fs-6 mt-2">SQL database</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/deleafveryApi" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                  </div>
+               </div>
+            </div>
+         </article>
 
-            <label for="content" class="form-label">content</label>
-            <textarea name="content" id="textarea" cols="30" rows="5" placeholder="..." class="form-control"></textarea>
+         <article class="row mb-5">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgCSS">
+               <img src="./assets/projectSS/barberSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+               <div class="projectDescription">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Alura Barber Page</h3>
+                     <p class="fs-5">A page for 'Alura Barber' where you can get to know them, their products, and their
+                        location.</p>
+                  </div>
+                  <div class="row languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/Alura-barber" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://fantastic-starlight-e1f938.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
+            </div>
+         </article>
 
-            <button type="submit" class="btn btn-light">Send</button>
-        </form>
-    </div>
+         <article class="row mt-5 text-end">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgJS order-1 order-md-2">
+               <img src="./assets/projectSS/calcSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
+               <div class="projectDescription-right">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Web calculator</h3>
+                     <p class="fs-5">this project is a web calculator with the basic operations, used JS and aply DOM
+                        concepts</p>
+                  </div>
+                  <div class="row flex-row-reverse languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconLanguage"
+                           alt="JavaScript icon">
+                        <p class="fs-6 mt-2">javaScript</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/calculadora" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://cheerful-pegasus-fad1b9.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
+            </div>
+         </article>
 
-    <footer id="footer">
-        <button id="githubBtn" class="footerBtn">
-          <img src="./style/images/icon/GH_icon.png" alt="GitHub icon" width="50px" height="50px">
-        </button>
-        <button id="linkedinBtn" class="footerBtn">
-          <img src="./style/images/icon/linkedin_icon.svg" alt="LinkedIn icon" width="50px" height="50px">
-        </button>
-      </footer>
-      
+         <article class="row mb-5">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgJS">
+               <img src="./assets/projectSS/watherSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+               <div class="projectDescription">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">Weather cite</h3>
+                     <p class="fs-5">weather cite using an api with javascript fetch and manipulating the DOM, pure
+                        HTML, CSS, JS</p>
+                  </div>
+                  <div class="row languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconLanguage"
+                           alt="JavaScript icon">
+                        <p class="fs-6 mt-2">javaScript</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/werather_cite" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://animated-narwhal-dc6704.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="row mt-5 text-end">
+            <div class="col-md-6 p-5 rounded rounded-5 shadow bgBootstrap order-1 order-md-2">
+               <img src="./assets/projectSS/portfolioSS.png" class="img-fluid rounded" alt="api project ss">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
+               <div class="projectDescription-right">
+                  <div class="projectText">
+                     <h3 class="text-center mt-3">This portfolio!</h3>
+                     <p class="fs-5">This portfolio was made to expose my skills, projects and knowledge so I put all my
+                        habbilities in this page :)</p>
+                  </div>
+                  <div class="row flex-row-reverse languajeUsed">
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconLanguage"
+                           alt="HTML icon">
+                        <p class="fs-6 mt-2">HTML</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/css_icon.svg" title="CSS" class="img-fluid iconLanguage"
+                           alt="CSS icon">
+                        <p class="fs-6 mt-2">CSS</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/js_icon.svg" title="JavaScript" class="img-fluid iconLanguage"
+                           alt="JavaScript icon">
+                        <p class="fs-6 mt-2">javaScript</p>
+                     </div>
+                     <div class="col-auto text-center">
+                        <img src="./assets/icons/bootstrap_icon.svg" title="Bootstrap" class="img-fluid iconLanguage"
+                           alt="Bootstrap icon">
+                        <p class="fs-6 mt-2">Bootstrap</p>
+                     </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                     <a href="https://github.com/PricedTuna/portfolio" class="btn btn-outline-dark"
+                        type="button">Github</a>
+                     <a href="https://edgarvega359.netlify.app/" class="btn btn-outline-primary"
+                        type="button">View Site</a>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+
+      </div>
+   </section>
+
+   <section class="container mt-5 p-5" id="contact">
+      <div class="container formContainer p-5 rounded rounded-5 text-white shadow">
+         <p class="fs-2 text-center">Contact me</p>
+         <form action="https://formsubmit.co/edgarevegar04@gmail.com" method="POST" class="">
+            <label for="name" class="form-label fs-4">name</label>
+            <input type="text" name="name" class="form-control p-2" placeholder="name..." required>
+
+            <label for="email" class="form-label fs-4">email</label>
+            <input type="email" name="email" class="form-control p-2" placeholder="email..." required>
+
+            <label for="content" class="form-label fs-4">content</label>
+            <textarea name="content" id="textarea" cols="30" rows="5" placeholder="content..."
+               class="form-control p-2"></textarea>
+
+            <div class="d-grid gap-2 mt-3">
+               <button type="button" class="btn btnContact text-black p-2">Send</button>
+            </div>
+         </form>
+      </div>
+   </section>
+
+   <footer class="container-fluid bg-black p-4">
+      <div class="text-center">
+         <a href="https://www.linkedin.com/in/edgarvegaruiz/" class="fs-5 mx-2"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+         <a href="https://github.com/PricedTuna" class="fs-5 mx-2"><i class="fa-brands fa-github fa-2xl"></i></a>
+      </div>
+   </footer>
+
+   <!-- JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+   <script type="module" src="./script/js/main.js"></script>
 </body>
 
 </html>
