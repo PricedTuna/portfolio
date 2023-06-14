@@ -24,6 +24,17 @@ body {
    background-color: #56C0C4;
 }
 
+.aboutImageCol {
+   animation-name: appearX;
+   animation-duration: 1s;
+}
+
+.aboutTextCol {
+   animation-name: appearX;
+   animation-timing-function: ease;
+   animation-duration: 1.3s;
+}
+
 #edgarAboutPhoto {
    height: 70%;
 }
@@ -88,4 +99,53 @@ body {
 
 .hide {
    display: none;
+}
+
+
+/* Transitions */
+
+.hiddenSection {
+   opacity: 0;
+   transition: all 1.5s;
+}
+
+.hiddenProject {
+   opacity: 0;
+   transform: translatey(-20%);
+   transition: all 1s;
+}
+
+.hiddenSkill {
+   opacity: 0;
+   filter: blur(5px);
+   transform: translatex(-100%);
+   transition: all 1s;
+}
+
+.show {
+   opacity: 1;
+}
+
+.showX {
+   opacity: 1;
+   filter: blur(0px);
+   transform: translatex(0%);
+}
+
+.showY {
+   opacity: 1;
+   transform: translatey(0%);
+}
+
+
+@keyframes appearX{
+   from{
+      opacity: 0;
+      transform: translatex(-100%);
+   }
+
+   to {
+      opacity: 1;
+      transform: translatex(0px);
+   }
 }

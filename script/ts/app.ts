@@ -1,4 +1,5 @@
 import filterProjects from "./modules/filter.js";
+import transitions from "./modules/transitions.js"
 
 
 export default class App{
@@ -8,6 +9,7 @@ export default class App{
 
    Load() {
       filterProjects();
+      transitions();
    }
 
 }
