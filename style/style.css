@@ -86,6 +86,6 @@ body {
    background-color: #56C0C4;
 }
 
-/* .projectDescription {
-   margin-left: 20%;
-} */ 
+.hide {
+   display: none;
+}

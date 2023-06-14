@@ -1,7 +1,8 @@
+import filterProjects from "./modules/filter.js";
 export default class App {
     constructor() {
     }
     Load() {
-        console.log("The app is loaded...");
+        filterProjects();
     }
 }
