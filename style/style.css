@@ -24,6 +24,11 @@ body {
    background-color: #56C0C4;
 }
 
+#aboutText {
+   font-size: 1.4rem !important;
+}
+
+
 .aboutImageCol {
    animation-name: appearX;
    animation-duration: 1s;
@@ -33,10 +38,6 @@ body {
    animation-name: appearX;
    animation-timing-function: ease;
    animation-duration: 1.3s;
-}
-
-#edgarAboutPhoto {
-   height: 70%;
 }
 
 .aboutMeText {

@@ -31,7 +31,8 @@
 <body>
    <nav class="navbar navbar-expand-lg fixed-top shadow-sm border border-info bgNavbar py-3">
       <div class="container">
-         <a href="#" class="navbar-brand customFontNav fs-3 m-0">E d g a r <span class="ms-3 customFontNav">V e g a</span></a>
+         <a href="#" class="navbar-brand customFontNav fs-3 m-0">E d g a r <span class="ms-3 customFontNav">V e g
+               a</span></a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,19 +57,24 @@
    </nav>
 
    <section class="container-fluid pt-3" id="about">
-      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
-         <div class="col d-flex flex-column justify-content-center align-items-center text-center aboutImageCol">
-            <img src="./assets/edgarPhoto.jpeg" class="img-fluid rounded-circle border" alt="Edgar Photo"
-               id="edgarAboutPhoto" />
+      <div class="d-flex align-items-center justify-content-center row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+         <div class="col text-center aboutImageCol">
+            <img src="./assets/edgarPhoto.jpeg" width="70%" class="img-fluid rounded-circle border" alt="Edgar Photo" />
          </div>
          <div class="col d-flex flex-column justify-content-center align-items-center p-2 aboutTextCol">
             <div class="container">
-               <h2 class="text-white text-center fw-bold aboutMeText fs-1 my-4">About Me</h2>
-               <p class="text-white fs-4 my-3"><p class="text-white fs-4">RIGHT PHONE NUMBER: 6981064577</p>I am a Software Engineering student passionate about programming and
-                  innovation. I have both skill and demonstrated experience with projects in HTML, CSS, JavaScript,
-                  TypeScript, Bootstrap, Java, Spring Boot, and SQL database management. I have experience working in
-                  teams and enjoy maintaining a healthy and collaborative work environment. I am highly open to learning
-                  new technologies and applying them to projects. Additionally, I am flexible and dynamic.</p>
+               <p class="text-white fs-4 my-3" id="aboutText">I am a passionate Software Engineering student with a strong foundation
+                  in programming and a keen interest in innovation. I possess both skills and proven experience in
+                  various technologies, including HTML, CSS, JavaScript, TypeScript, PHP, CodeIgniter, Bootstrap, Java,
+                  Spring Boot, and SQL database management.
+
+                  As a full-stack web developer, I have successfully contributed to projects using HTML, CSS, JS,
+                  Bootstrap, PHP, and CodeIgniter, collaborating effectively within teams. I take pride in maintaining a
+                  healthy and collaborative work environment, fostering teamwork and communication.
+
+                  I am highly adaptable, open to learning new technologies, and enthusiastic about applying them to
+                  projects. My flexibility and dynamism contribute to my ability to navigate the ever-evolving landscape
+                  of software development. Let's innovate together!</p>
                <div class="d-grid gap-2 d-md-block text-center mt-4">
                   <a href="#contact" class="btn btnContact px-4 py-2 fs-5">Contact Me</a>
                   <div class="list-group list-group-horizontal list-group-flush mt-2 fs-5">
@@ -89,9 +95,10 @@
 
    <section class="container mt-5 p-5 hiddenSection" id="skills">
       <h2 class="text-center fs-1">Skills</h2>
-      <div class="row gy-3 row-cols-2 row-cols-md-3 row-cols-lg-4 text-center pt-5">
+      <div class="row d-flex justify-content-center gy-3 row-cols-2 row-cols-md-3 row-cols-lg-4 text-center m-auto pt-5">
          <div class="col hiddenSkill">
-            <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconSkill hiddenSkill" alt="HTML icon">
+            <img src="./assets/icons/html_icon.svg" title="HTML" class="img-fluid iconSkill hiddenSkill"
+               alt="HTML icon">
             <h3 class="fs-5 mt-2">HTML</h3>
          </div>
          <div class="col hiddenSkill">
@@ -125,10 +132,15 @@
                alt="Springboot icon">
             <h3 class="fs-5 mt-2">Springboot</h3>
          </div>
-      </div>
-      <div class="container-fluid text-center hiddenSkill">
-         <img src="./assets/icons/react_icon.svg" title="disabled" class="img-fluid iconSkill bgDisabled" alt="...">
-         <h3 class="fs-5 mt-2">(in progres...)</h3>
+         <div class="col hiddenSkill">
+            <img src="./assets/icons/php_icon.svg" width="140px" title="PHP" class="img-fluid iconSkill"
+               alt="Springboot icon">
+            <h3 class="fs-5 mt-2">PHP</h3>
+         </div>
+         <div class="col hiddenSkill">
+            <img src="./assets/icons/ci_icon.svg" title="PHP" class="img-fluid iconSkill" alt="Springboot icon">
+            <h3 class="fs-5 mt-2">CodeIgniter</h3>
+         </div>
       </div>
    </section>
 
@@ -160,7 +172,8 @@
                <div class="projectDescription-right">
                   <div class="projectText">
                      <h3 class="text-center mt-3">To Do Web CRUD</h3>
-                     <p class="fs-5">This To Do list Web, made with HTML, CSS, JavaScript and Typescript (and love) applys 
+                     <p class="fs-5">This To Do list Web, made with HTML, CSS, JavaScript and Typescript (and love)
+                        applys
                         CRUD concepts using the local storage and DOM concepts
                      </p>
                   </div>
@@ -505,8 +518,8 @@
                   <div class="d-grid gap-2 d-md-block">
                      <a href="https://github.com/PricedTuna/portfolio" class="btn btn-outline-dark"
                         type="button">Github</a>
-                     <a href="https://edgarvega359.netlify.app/" class="btn btn-outline-primary"
-                        type="button">View Site</a>
+                     <a href="https://edgarvega359.netlify.app/" class="btn btn-outline-primary" type="button">View
+                        Site</a>
                   </div>
                </div>
             </div>
@@ -538,7 +551,8 @@
 
    <footer class="container-fluid bg-black p-4">
       <div class="text-center">
-         <a href="https://www.linkedin.com/in/edgarvegaruiz/" class="fs-5 mx-2"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+         <a href="https://www.linkedin.com/in/edgarvegaruiz/" class="fs-5 mx-2"><i
+               class="fa-brands fa-linkedin fa-2xl"></i></a>
          <a href="https://github.com/PricedTuna" class="fs-5 mx-2"><i class="fa-brands fa-github fa-2xl"></i></a>
       </div>
    </footer>
